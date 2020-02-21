@@ -1,0 +1,160 @@
+:host {
+
+    .wrapper {
+
+        background: #eee;
+
+        mat-icon {
+
+            cursor: pointer;
+
+            &:hover {
+
+                color: #333;
+
+            }
+
+        }
+
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+
+        display: flex;
+        flex-direction: column;
+        font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+        border: 1px solid #ddd;
+
+        width: 350px;
+
+        .header {
+
+            background: #866ee9;
+
+            .top {
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 15px;
+
+                .left {
+
+                    flex: 0 1 30px;
+
+                }
+
+                .center {
+
+                    flex: 1;
+
+                    font-size: 20px;
+
+                }
+
+                .right {
+
+
+                }
+
+            }
+
+        }
+
+        .input {
+
+            display: flex;
+            align-items: center;
+            background: #ddd;
+            //overflow: hidden;
+            height: 46px;
+
+            input {
+
+                font-size: 20px;
+                background: #ddd;
+                border: none;
+                width: 100%;
+                padding: 5px;
+                outline: none;
+            }
+
+            mat-icon {
+                //position: relative;
+                //top: 5px;
+                padding-left: 10px;
+                width: 25px;
+                font-size: 20px;
+                color: #aaa;
+
+            }
+
+        }
+
+        .content {
+
+            flex: 1;
+            overflow-y: scroll;
+            padding: 5px;
+
+        }
+
+        .section {
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            border-bottom: 1px solid #ddd;
+            padding: 15px;
+            cursor: pointer;
+
+            &:hover {
+
+                font-weight: bold;
+
+            }
+
+            &:last-child {
+
+                border-bottom: 0;
+
+            }
+
+        }
+
+        .buttons {
+
+            .section {
+
+                &:first-child {
+
+                    border-top: 1px solid #ddd;
+
+                }
+
+            }
+        }
+
+        .src {
+
+            flex: 1;
+            padding: 10px;
+            overflow-y: scroll;
+
+        }
+
+        .footer {
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            padding: 15px;
+
+            background: #ccc;
+
+        }
+    }
+
+}
